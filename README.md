@@ -9,7 +9,7 @@ Draw a knowledge graph
 - Based on neo4j, set your own requestUrl & json parameters to init page.(set post_request:true, post_url:"/t/t", post_parameters:"json")
 - data structure just like: `{"nodes":[{"name":"author","id":1},{"name":"software","id":2},{"name":"application","id":3}],"links":[{"source":1,"target":2,"label":"write"},{"source":2,"target":3,"label":"apply"}]}`,
 
-`json
+```json
 {
     tip_use: false,
     use_dict: true,
@@ -18,4 +18,4 @@ Draw a knowledge graph
     post_url:"",
     post_parameters:{}
 }
-`
+```
