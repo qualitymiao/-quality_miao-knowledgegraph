@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Graph Test/中文版</title>
+</head>
+<body>
+    <div id="notification" class="notification"></div>
+    
+    <svg id="container">
+        <g id="network-graph"></g>
+        <g id="bar-graph"></g>
+    </svg>
+
+    <div id="left-tool-bar"></div>
+
+    <div id="nodeDataPopup" class="node-data-popup"></div>
+
+    <div id="labels-bar">
+        <ul></ul>
+    </div>
+
+    <!-- <script type="text/javascript" src="thirdParty/jquery.min.js"></script> -->
+    <script src="dist/bundle.js"></script>
+    <script>
+        // Initialize your library with a test graph ID
+        KnowledgeGraph.default({tip_use: false});
+    </script>
+
+</body>
+</html>
