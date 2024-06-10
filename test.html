@@ -3,15 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Knowledge Graph Test/中文版</title>
+    <title>Knowledge Graph Test</title>
 </head>
 <body>
     <div id="notification" class="notification"></div>
-    
+
     <svg id="container">
+        <!-- 网络图 -->
         <g id="network-graph"></g>
+        <!-- 柱状图 -->
         <g id="bar-graph"></g>
     </svg>
+
+    <div id="top-tool-bar">
+        <button class="top-menu-item" id="upload-data"><i class="fa fa-upload"></i> 上传数据</button>
+        <button class="top-menu-item" id="download-data"><i class="fa fa-download"></i> 导出数据</button>
+        <button class="top-menu-item" id="download-img"><i class="fa fa-share"></i> 导出图片</button>
+        <div id="top-right-bar">
+            <button id="stop-button">
+                <div id="network-status"></div>
+                <div id="stop-button-text">停止布局</div>
+            </button>
+            <button class="btn" id="searchfornode">详细查询</button>
+            <button title="路径查找" class="top-tool-button" id="route-button"><i class="fa fa-road"></i></button>
+            <!-- <button class="top-tool-button" id="setting-button"><i class="fa fa-gear"></i></button> -->
+            <button title="全屏" class="top-tool-button" id="screen-button"><i class="fa fa-expand"
+                    id="screen-switch"></i></button>
+        </div>
+    </div>
+
+    <div id="info-layout">
+    </div>
+
 
     <div id="left-tool-bar"></div>
 
@@ -21,12 +44,25 @@
         <ul></ul>
     </div>
 
+    <div id="updatemodal" class="modal-overlay">
+    </div>
+    <div id="modal" class="modal-overlay">
+    </div>
+
+    <div id="upload-layout">
+    </div>
+
+    <div id="route-box" class="right-box">
+    </div>
+
+    <div id="relationship-input" class="relationship-input">
+    </div>
+
     <!-- <script type="text/javascript" src="thirdParty/jquery.min.js"></script> -->
     <script src="dist/bundle.js"></script>
     <script>
         // Initialize your library with a test graph ID
         KnowledgeGraph.default({tip_use: false});
     </script>
-
 </body>
 </html>
