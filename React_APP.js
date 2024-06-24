@@ -22,7 +22,7 @@ function App() {
     };
   }, []);
   return (
-      <div>
+      <div class="quality_miao_graph">
           <div id="notification" className="notification"></div>
 
           <div id="chart-container" style={{ display: 'none',position:'absolute'}}>
